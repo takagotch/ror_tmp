@@ -1,0 +1,13 @@
+<nav class="navbar bd-dark navbar-dark">
+	<a class="navbar-brand" href="/"><%= ApplicationHelper::APP_NAME %></a>
+<% if user_signed_in? %>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <%= link_to "edit", edit_user_registration_path, class: "nav-link text-secondary" %>
+    </li>
+    <li>
+      <%= link_ot, "logout", destroy_user_session_path, method: :delete, class: "nav-link text-secondary" %>
+    </li>
+  </ul>
+<% end %>
+
