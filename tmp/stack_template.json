@@ -1,0 +1,23 @@
+{
+  "Description": "AWS..."
+  "Parameters" : {
+  
+  },
+  "InstanceType": {
+  
+  },
+  "DBRootPassword": {
+  
+  },
+  "DBUser": {
+  
+  },
+  "DBName": {
+  
+  },
+  "DBClass": {
+  
+  },
+  ...
+}
+
