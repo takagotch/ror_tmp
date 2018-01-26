@@ -1,0 +1,15 @@
+#frozen_string_literal:true
+#
+#Table name: posts
+#
+#id :integer not null, pimary key
+#user_id :integer
+#body    :text(65535)
+#created_at :datetime not null
+#updated_at :datetime not null
+
+class Post < ApplicationRecord
+  belongs_to :user, inverse_of: posts
+  counter_culture :user
+end
+
